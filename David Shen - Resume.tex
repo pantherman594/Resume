@@ -1,0 +1,201 @@
+%! TEX program = xelatex
+\documentclass[10pt]{article}
+
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{fontspec}
+\usepackage{xifthen}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage[none]{hyphenat}
+\usepackage{fontawesome}
+
+\usepackage[hidelinks]{hyperref}
+\urlstyle{same} % style hyperlinks like regular text
+
+\pagestyle{empty}
+\geometry{margin=0.5in}
+\setlength\parindent{0pt}
+\setlist{nosep}
+\setmainfont{Roboto Light}
+\setlength{\arrayrulewidth}{1.5pt}
+\setlength{\tabcolsep}{10pt}
+
+\newfontfamily\roboto{Roboto}
+\newcommand{\lmr}[1]{{\fontfamily{lmr}\selectfont#1}}
+
+\newcommand{\name}[2]{
+  \begin{minipage}{0.4\textwidth}
+    \begin{flushright}
+      \setlength{\tabcolsep}{0pt}
+      \begin{tabular}{r}
+        \fontsize{36pt}{0pt}\selectfont
+        \MakeUppercase{#1 \textbf{#2}} \\
+        \normalsize \, \textit{Software Developer}\hfill \url{https://dav.sh/} \,
+      \end{tabular}
+    \end{flushright}
+  \end{minipage}
+}
+
+\newcommand{\textlbf}[1]{{\roboto #1}}
+\renewcommand{\date}[2]{#1 \textlbf{#2}}
+\newcommand{\daterange}[2]{#1 -- \ifthenelse{\equal{#2}{}}{\textit{Present}}{#2}}
+\newcommand{\resumesection}[1]{\vspace{-0.2cm}\section*{#1}\vspace{-0.2cm}\vspace{0.1cm}}
+\newcommand{\heading}[2]{\textbf{#1} \\ \textit{#2}}
+
+\begin{document}
+
+{
+\setlength{\tabcolsep}{20pt}
+\begin{center}
+  \begin{tabular}{c | c}
+% \name is self-explanatory. \topinfo is for things like social media, email, phone number, address, etc.
+  \name{David}{Shen} & \begin{minipage}{0.4\textwidth}
+    \vspace{6pt}
+    \href{mailto:davi@d-shen.xyz}{davi@d-shen.xyz} \\
+    \url{https://github.com/pantherman594} \\
+    (617) 863-7436 \\
+    24 Tip Top Street, Boston, MA 02135
+    \vspace{6pt}
+  \end{minipage}
+\end{tabular}
+\end{center}
+}
+
+\vspace{0.5cm}
+
+\begin{minipage}[t]{0.25\textwidth}
+  \begin{flushleft}
+    \resumesection{Education}
+    \textbf{Boston College} \newline
+    \textit{B.S. in Computer Science} \newline
+    \textlbf{GPA:} 3.9 \textlbf{Major GPA:} 4.0 \newline
+    Dean's List First Honors. \newline
+    \daterange{\date{Aug}{2018}}{\date{May}{2021}} \textit{\color{gray}{(exp.)}}
+
+    \vspace{0.25cm}
+
+    \textbf{Boston Latin School} \newline
+    \textlbf{GPA:} 4.25 W, 3.92 UW. \newline
+    \daterange{\date{Sep}{2012}}{\date{May}{2018}}
+
+    \resumesection{Skills}
+    \textbf{Languages} \newline
+    JavaScript \newline
+    TypeScript \newline
+    Java \newline
+    C \newline
+    Python \newline
+    HTML \newline
+    CSS \newline
+    Bash shell \newline
+    \lmr{\LaTeX}
+
+    \vspace{0.25cm}
+
+    \textbf{Technologies} \newline
+    Git \newline
+    Node.js \newline
+    React \newline
+    Express \newline
+    MariaDB \newline
+    PostgreSQL \newline
+    MongoDB \newline
+    Android
+
+    \resumesection{Awards}
+    \textbf{Hack the Heights} \newline
+    First Place \newline
+    \date{Apr 14}{2019}
+
+    \vspace{0.25cm}
+
+    \textbf{Hack Haverhill} \newline
+    First Place \newline
+    \date{Nov 17}{2018}
+
+    \vspace{0.25cm}
+
+    \textbf{BC Hacks} \newline
+    Grand Prize, Hacker's Choice \newline
+    \date{Nov 11}{2018}
+
+    \vspace{0.25cm}
+
+    \textbf{Codestellation} \newline
+    Best Web/Mobile Hack \newline
+    \date{Nov 4}{2018}
+
+    \vspace{0.25cm}
+
+    \textbf{MIT Battlecode} \newline
+    Finalist \newline
+    \date{Feb}{2018}
+  \end{flushleft}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.7\textwidth}
+  \begin{flushleft}
+
+  \resumesection{Experience}
+  \textbf{Rocket Software} \hfill \textbf{Waltham, MA} \newline
+  \textit{Software Engineering Intern} \hfill \daterange{\date{Jun}{2019}}{}
+  \begin{itemize}
+    \item Built a new page in Newton---a Zowe (Open Source Mainframe Project) mainframe application---to filter and search for objects in a Db2 database, visualize their hierarchical relationships, and define “Collections” of many objects.
+    \item Implemented Microsoft Language Servers in a Zowe code editor; architected plugin structure for Language Servers to run on Zowe.
+    \item Developed various features for Newton, including a configuration wizard, GraphQL integration, feature flags, and a component generator.
+  \end{itemize}
+
+  \vspace{0.25cm}
+
+  \textbf{Ecludio} \hfill \textbf{Atlanta, GA} \newline
+  \textit{Chief Technology Officer} \hfill \daterange{\date{Oct}{2018}}{}
+  \begin{itemize}
+    \item Planned, designed, and developed the entire backend and web frontend.
+    \item Wrote up a comprehensive blueprint documenting the workings of the app, streamlining the development process.
+  \end{itemize}
+
+  \vspace{0.25cm}
+
+  \textbf{Boston College} \hfill \textbf{Chestnut Hill, MA} \newline
+  \textit{Teaching Assistant for Computer Science II} \hfill \daterange{\date{Jan}{2019}}{\date{May}{2019}}
+  \begin{itemize}
+    \item Wrote a script to automatically download students’ problem sets, suggest grades, and upload grades and comments to the Canvas Learning Management System, saving the professor hours of time.
+    \item Aided 30+ students with installing Java and using Git.
+    \item Answered student questions during office hours and online.
+  \end{itemize}
+
+  \vspace{0.25cm}
+
+  \textbf{BC GET Delivery} \hfill \textbf{Chestnut Hill, MA} \newline
+  \textit{Full Stack Developer} \hfill \daterange{\date{Oct}{2018}}{\date{Feb}{2019}}
+  \begin{itemize}
+    \item Fixed a security bug that allowed anyone to perform admin-only tasks without authorization.
+    \item Created a self-serve password reset system.
+    \item Developed an automated app-to-SMS messaging platform, which increased the ease of communication between the deliverer and the customer and improved customer privacy.
+  \end{itemize}
+
+  \vspace{0.25cm}
+
+  \textbf{Lexington Solutions} \hfill \textbf{Boston, MA} \newline
+  \textit{Quality Assurance Intern} \hfill \daterange{\date{Jul}{2017}}{\date{Sep}{2017}}
+  \begin{itemize}
+    \item Automated the testing of web application input fields using Java and Selenium, saving hours of manual QA time per day.
+    \item Built a dynamic user permissions testing system that checks for inconsistencies in user-editable fields.
+  \end{itemize}
+
+  \resumesection{Projects}
+
+  \textbf{hackm.app} \hfill \href{https://github.com/hackmapp/hackmapp}{\faGithub \, \textit{hackmapp/hackmapp}} \newline
+  hackm.app is an interactive map of the previous, current, and upcoming MLH hackathons. It scrapes the MLH website every hour using Python and BeautifulSoup, which is processed and served with an Express backend to be displayed in the frontend using d3.
+
+  \vspace{0.25cm}
+
+  \textbf{Linker} \hfill \href{https://github.com/Subraiz/Linker}{\faGithub \, \textit{Subraiz/Linker}} \newline
+  A combination of LinkedIn and Tinder. Linker attempts to connect recruiters with students to ease the pains of the job process. Students and recruiters can swipe left or right on each other, so that before students apply they already know if a company is looking for someone like them.
+
+
+  \end{flushleft}
+\end{minipage}
+
+\end{document}
