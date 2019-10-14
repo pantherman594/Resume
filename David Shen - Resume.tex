@@ -22,6 +22,7 @@
 \setlength{\tabcolsep}{10pt}
 
 \newfontfamily\roboto{Roboto}
+\newfontfamily\robotothin{Roboto Thin}
 \newcommand{\lmr}[1]{{\fontfamily{lmr}\selectfont#1}}
 
 \newcommand{\name}[2]{
@@ -38,7 +39,8 @@
 }
 
 \newcommand{\textlbf}[1]{{\roboto #1}}
-\renewcommand{\date}[2]{#1 \textlbf{#2}}
+\newcommand{\textlight}[1]{{\robotothin #1}}
+\renewcommand{\date}[2]{#1 #2}
 \newcommand{\daterange}[2]{#1 -- \ifthenelse{\equal{#2}{}}{\textit{Present}}{#2}}
 \newcommand{\resumesection}[1]{\vspace{-0.2cm}\section*{#1}\vspace{-0.2cm}\vspace{0.1cm}}
 \newcommand{\heading}[2]{\textbf{#1} \\ \textit{#2}}
@@ -54,8 +56,7 @@
     \vspace{6pt}
     \href{mailto:davi@d-shen.xyz}{davi@d-shen.xyz} \\
     \url{https://github.com/pantherman594} \\
-    (617) 863-7436 \\
-    24 Tip Top Street, Boston, MA 02135
+    (617) 863-7436
     \vspace{6pt}
   \end{minipage}
 \end{tabular}
@@ -73,12 +74,6 @@
     Dean's List First Honors. \newline
     \daterange{\date{Aug}{2018}}{\date{May}{2021}} \textit{\color{gray}{(exp.)}}
 
-    \vspace{0.25cm}
-
-    \textbf{Boston Latin School} \newline
-    \textlbf{GPA:} 4.25 W, 3.92 UW. \newline
-    \daterange{\date{Sep}{2012}}{\date{May}{2018}}
-
     \resumesection{Skills}
     \textbf{Languages} \newline
     JavaScript \newline
@@ -86,7 +81,9 @@
     Java \newline
     C \newline
     Python \newline
-    HTML + CSS \newline
+    SQL \newline
+    Bash \newline
+    HTML + CSS
 
     \vspace{0.25cm}
 
@@ -95,6 +92,7 @@
     Git \newline
     Node.js \newline
     React + Redux \newline
+    Deck.gl \newline
     Express \newline
     NGINX \newline
     MongoDB \newline
@@ -146,8 +144,8 @@
 
   \vspace{0.25cm}
 
-  \textbf{Ecludio} \hfill \textbf{Atlanta, GA} \newline
-  \textit{Chief Technology Officer} \hfill \daterange{\date{Oct}{2018}}{}
+  \textbf{Ecludio}\quad\textit{\color{gray}{Student Run Startup}} \hfill \textbf{Atlanta, GA} \newline
+  \textit{Co-Founder, CTO} \hfill \daterange{\date{Oct}{2018}}{}
   \begin{itemize}
     \item Planned, designed, and developed the entire backend and web frontend.
     \item Wrote up a comprehensive blueprint documenting the workings of the app, streamlining the development process.
@@ -165,11 +163,11 @@
 
   \vspace{0.25cm}
 
-  \textbf{BC GET Delivery} \hfill \textbf{Chestnut Hill, MA} \newline
+  \textbf{BC GET Delivery}\quad\textit{\color{gray}{Student Run Startup}} \hfill \textbf{Chestnut Hill, MA} \newline
   \textit{Full Stack Developer} \hfill \daterange{\date{Oct}{2018}}{\date{Feb}{2019}}
   \begin{itemize}
     \item Developed an automated app-to-SMS messaging platform, which increased the ease of communication between the deliverer and the customer and improved customer privacy.
-    \item Fixed a security bug that allowed anyone to perform admin-only tasks without authorization.
+    \item Discovered and fixed a security bug that allowed anyone to perform admin-only tasks without authorization.
     \item Created a self-serve password reset system.
   \end{itemize}
 
