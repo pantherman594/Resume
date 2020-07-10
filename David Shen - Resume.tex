@@ -17,12 +17,12 @@
 \geometry{margin=0.5in}
 \setlength\parindent{0pt}
 \setlist{nosep}
-\setmainfont{Roboto Light}
+\setmainfont{Roboto-Light}
 \setlength{\arrayrulewidth}{1.5pt}
 \setlength{\tabcolsep}{10pt}
 
-\newfontfamily\roboto{Roboto}
-\newfontfamily\robotothin{Roboto Thin}
+\newfontfamily\roboto{Roboto-Regular}
+\newfontfamily\robotothin{Roboto-Thin}
 \newcommand{\lmr}[1]{{\fontfamily{lmr}\selectfont#1}}
 
 \newcommand{\name}[2]{
@@ -32,7 +32,7 @@
       \begin{tabular}{r}
         \fontsize{36pt}{0pt}\selectfont
         \MakeUppercase{#1 \textbf{#2}} \\
-        \normalsize \, \textit{Software Developer}\hfill \url{https://dav.sh/} \,
+        \normalsize \, \textit{Software Engineer}\hfill \url{https://dav.sh/} \,
       \end{tabular}
     \end{flushright}
   \end{minipage}
@@ -70,19 +70,16 @@
     \resumesection{Education}
     \textbf{Boston College} \newline
     \textit{B.S. in Computer Science} \newline
-    \textlbf{GPA:} 3.9 \textlbf{Major GPA:} 4.0 \newline
+    \textlbf{GPA:} 3.92 \textlbf{Major GPA:} 4.0 \newline
     Dean's List First Honors. \newline
-    \daterange{\date{Aug}{2018}}{\date{May}{2021}} \textit{\color{gray}{(exp.)}}
+    \daterange{\date{Aug}{2018}}{\date{May}{2022}} \textit{\color{gray}{(exp.)}}
 
     \resumesection{Skills}
     \textbf{Languages} \newline
-    JavaScript \newline
-    TypeScript \newline
+    JavaScript/Typescript \newline
     Java \newline
     Python \newline
-    C++ \newline
-    C \newline
-    SQL \newline
+    C/C++ \newline
     Bash \newline
     HTML + CSS
 
@@ -101,6 +98,17 @@
     PostgreSQL
 
     \resumesection{Awards}
+    \textbf{Codestellation} \newline
+    Judge's Pick \newline
+    \date{Nov 10}{2019}
+
+    \vspace{0.15cm}
+
+    Best Web/Mobile Hack \newline
+    \date{Nov 4}{2018}
+
+    \vspace{0.25cm}
+
     \textbf{Hack the Heights} \newline
     First Place \newline
     \date{Apr 14}{2019}
@@ -116,18 +124,6 @@
     \textbf{BC Hacks} \newline
     Grand Prize; Hacker's Choice \newline
     \date{Nov 11}{2018}
-
-    \vspace{0.25cm}
-
-    \textbf{Codestellation} \newline
-    Best Web/Mobile Hack \newline
-    \date{Nov 4}{2018}
-
-    \vspace{0.25cm}
-
-    \textbf{MIT Battlecode} \newline
-    Finalist \newline
-    \date{Feb}{2018}
   \end{flushleft}
 \end{minipage}
 \hfill
@@ -135,18 +131,34 @@
   \begin{flushleft}
 
   \resumesection{Experience}
-  \textbf{Rocket Software} \hfill \textbf{Waltham, MA} \newline
-  \textit{Software Engineering Intern} \hfill \daterange{\date{Jun}{2019}}{}
+  \textbf{Microsoft} \, Base OS Kernel \hfill Redmond, WA \, \textbf{Remote} \newline
+  \textit{Software Engineering Intern} \hfill \daterange{\date{Jun}{2020}}{}
   \begin{itemize}
-    \item Built a new page in Newton, a Zowe (Open Source Mainframe Project) mainframe application, to filter and search for objects in a Db2 database, visualize and explore their hierarchical relationships, and define “Collections” of many objects.
-    \item Implemented Microsoft Language Servers in a Zowe code editor; architected plugin structure for Language Servers to run on Zowe.
-    \item Developed various features for Newton, including a configuration wizard, GraphQL integration, feature flags, and a component generator.
+    \item Took ownership of a project bringing a highly desired---by internal Windows teams and external clients---feature to Windows containers that decreased specific application loading scenarios from minutes to seconds.
   \end{itemize}
 
   \vspace{0.25cm}
 
-  \textbf{Ecludio}\quad\textit{\color{gray}{Student Run Startup}} \hfill \textbf{Atlanta, GA} \newline
-  \textit{Co-Founder, CTO} \hfill \daterange{\date{Oct}{2018}}{}
+  \textbf{Rocket Software} \, Zowe App Platform \hfill \textbf{Waltham, MA} \newline
+  \textit{Software Engineering Intern} \hfill \daterange{\date{Jun}{2019}}{\date{Dec}{2019}}
+  \begin{itemize}
+    \item Built a new web interface for mainframes to filter and search for objects in a Db2 database, visualize and explore their hierarchical relationships, and define “Collections” of many objects.
+    \item Designed and implemented a modular plugin system to add Microsoft Language Servers to a browser-based code editor for the mainframe.
+  \end{itemize}
+
+  \vspace{0.25cm}
+
+  \textbf{Fellowship of Christian Clubs} \hfill \textbf{Remote} \newline
+  \textit{Software Engineer} \hfill \daterange{\date{Jun}{2019}}{}
+  \begin{itemize}
+    \item Developed, maintained, and hosted the backend and database.
+    \item Designed and helped develop the web interface.
+  \end{itemize}
+
+  \vspace{0.25cm}
+
+  \textbf{rSpace} \, \textit{\color{gray}{Student Run Startup}} \hfill \textit{Atlanta, GA} \textbf{Remote} \newline
+  \textit{Co-Founder and CTO} \hfill \daterange{\date{Oct}{2018}}{}
   \begin{itemize}
     \item Planned, designed, and developed the entire backend and web frontend.
     \item Wrote up a comprehensive blueprint documenting the workings of the app, streamlining the development process.
@@ -158,35 +170,27 @@
   \textit{Teaching Assistant for Computer Science II} \hfill \daterange{\date{Jan}{2019}}{\date{May}{2019}}
   \begin{itemize}
     \item Wrote a script to automatically download students’ problem sets, suggest grades, and upload grades and comments to the Canvas Learning Management System, saving the professor hours of time.
-    \item Aided 30+ students with installing Java and using Git.
-    \item Answered student questions during office hours and online.
+    \item Assisted students with problem sets and answered student questions.
   \end{itemize}
 
   \vspace{0.25cm}
 
-  \textbf{BC GET Delivery}\quad\textit{\color{gray}{Student Run Startup}} \hfill \textbf{Chestnut Hill, MA} \newline
+  \textbf{BC GET Delivery} \, \textit{\color{gray}{Student Run Startup}} \hfill \textbf{Chestnut Hill, MA} \newline
   \textit{Full Stack Developer} \hfill \daterange{\date{Oct}{2018}}{\date{Feb}{2019}}
   \begin{itemize}
-    \item Developed an automated app-to-SMS messaging platform, which increased the ease of communication between the deliverer and the customer and improved customer privacy.
-    \item Discovered and fixed a security bug that allowed anyone to perform admin-only tasks without authorization.
-    \item Created a self-serve password reset system.
+    \item Developed an automated app-to-SMS messaging platform, to ease communication between deliverer and customer and improve customer privacy.
+    \item Discovered and fixed critical security flaws.
   \end{itemize}
 
   \resumesection{Projects}
 
   \textbf{WikiWhere} \hfill \href{https://wikiwhere.org/}{\faLink \, \textit{https://wikiwhere.org/}} \quad \href{https://github.com/wikiwhere/wikiwhere}{\faGithub \, \textit{wikiwhere/wikiwhere}} \newline
-  WikiWhere is a visualization of Wikipedia articles, and can be used to either traverse through linked articles or find the shortest path between two articles. The frontend uses d3 to visualize the graph, using data returned by the JavaScript and C++ backend. The backend queries Wikipedia data dumps and uses a BFS algorithm to find the shortest path. I worked primarily on the backend and search algorithm.
+  WikiWhere is a visualization of Wikipedia articles, and can be used to either traverse through linked articles or find the shortest path between two articles. The frontend uses d3 to visualize the graph, using data returned by the JavaScript and C++ backend. The backend queries Wikipedia data dumps and uses a bi-directional breadth first search to find the shortest path. I worked primarily on the backend and search algorithm.
 
   \vspace{0.25cm}
 
   \textbf{hackm.app} \hfill \href{https://hackm.app/}{\faLink \, \textit{https://hackm.app/}} \quad \href{https://github.com/hackmapp/hackmapp}{\faGithub \, \textit{hackmapp/hackmapp}} \newline
   hackm.app is an interactive map of the previous, current, and upcoming MLH hackathons. It scrapes the MLH website every hour using Python and BeautifulSoup, which is processed and served with an Express backend to be displayed in the website frontend using d3. I worked on the backend and helped with polishing the frontend.
-
-  \vspace{0.25cm}
-
-  \textbf{Linker} \hfill \href{https://github.com/Subraiz/Linker}{\faGithub \, \textit{Subraiz/Linker}} \newline
-  A combination of LinkedIn and Tinder, built using React Native. Linker attempts to connect recruiters with students to ease the pains of the job process. Students and recruiters can swipe left or right on each other, so that before students apply they already know if a company is looking for someone like them.
-
 
   \end{flushleft}
 \end{minipage}
