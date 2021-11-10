@@ -70,7 +70,7 @@
     \resumesection{Education}
     \textbf{Boston College} \newline
     \textit{B.S. in Computer Science} \newline
-    \textlbf{GPA:} 3.91 \textlbf{Major GPA:} 3.97 \newline
+    \textlbf{GPA:} 3.93 \textlbf{Major GPA:} 3.97 \newline
     Dean's List First Honors. \newline
     \daterange{\date{Aug}{2018}}{\date{May}{2022}} \textit{\color{gray}{(exp.)}}
 
@@ -80,6 +80,8 @@
     TypeScript \newline
     Python \newline
     Rust \newline
+    Go \newline
+    Dart \newline
     Java \newline
     Bash \newline
     HTML + CSS
@@ -91,8 +93,7 @@
     Git \newline
     Node.js \newline
     React + Redux \newline
-    Deck.gl \newline
-    Vue \newline
+    Flutter \newline
     Express \newline
     NGINX \newline
     MongoDB \newline
@@ -160,15 +161,6 @@
 
   \vspace{0.25cm}
 
-  \textbf{rSpace} \, \textit{\color{gray}{Student Run Startup}} \hfill Atlanta, GA \, \textbf{Remote} \newline
-  \textit{Co-Founder and CTO} \hfill \daterange{\date{Oct}{2018}}{}
-  \begin{itemize}
-    \item Planned, designed, and developed the entire backend and web frontend.
-    \item Wrote up a comprehensive blueprint documenting the workings of the app, streamlining the development process.
-  \end{itemize}
-
-  \vspace{0.25cm}
-
   \textbf{Boston College} \hfill \textbf{Chestnut Hill, MA} \newline
   \textit{Teaching Assistant for Computer Science II} \hfill \daterange{\date{Jan}{2019}}{\date{May}{2019}}
   \begin{itemize}
@@ -187,13 +179,23 @@
 
   \resumesection{Projects}
 
-  \textbf{WikiWhere} \hfill \href{https://wikiwhere.org/}{\faLink \, \textit{https://wikiwhere.org/}} \quad \href{https://github.com/wikiwhere/wikiwhere}{\faGithub \, \textit{wikiwhere/wikiwhere}} \newline
-  WikiWhere is a visualization of Wikipedia articles, and can be used to either traverse through linked articles or find the shortest path between two articles. The frontend uses d3 to visualize the graph, using data returned by the JavaScript and C++ backend. The backend queries Wikipedia data dumps and uses a bi-directional breadth first search to find the shortest path. I worked primarily on the backend and search algorithm.
+  \textbf{BC COVID-19 Dashboard} \hfill \href{https://bccovid.dav.sh/}{\faLink \, \textit{bccovid.dav.sh}} \quad \href{https://github.com/pantherman594/bc-covid}{\faGithub \, \textit{pantherman594/bc-covid}} \newline
+  Unofficial COVID-19 dashboard to visualize the COVID-19 testing at Boston College during the 2021-22 school year. It automatically scrapes BC's official dashboard to display it in a more informative and user-friendly manner. Built with React and Recharts on the frontend, with a TypeScript backend and MongoDB database.
 
   \vspace{0.25cm}
 
-  \textbf{hackm.app} \hfill \href{https://hackm.app/}{\faLink \, \textit{https://hackm.app/}} \quad \href{https://github.com/hackmapp/hackmapp}{\faGithub \, \textit{hackmapp/hackmapp}} \newline
-  hackm.app is an interactive map of the previous, current, and upcoming MLH hackathons. It scrapes the MLH website every hour using Python and BeautifulSoup, which is processed and served with an Express backend to be displayed in the website frontend using d3. I worked on the backend and helped with polishing the frontend.
+  \textbf{In-Person Among Us} \newline
+  Flutter app that recreates the Among Us game in real life, allowing players to complete tasks, kill nearby crewmates, and report bodies in real time. Tasks are initiated by scanning a QR code at a specified location, which launches the task in the app. The "wires" task was also recreated in real life with an Arduino.
+
+  \vspace{0.25cm}
+
+  \textbf{WikiWhere} \hfill \href{https://wikiwhere.ciliber.to/}{\faLink \, \textit{wikiwhere.ciliber.to}} \quad \href{https://github.com/wikiwhere/wikiwhere}{\faGithub \, \textit{wikiwhere/wikiwhere}} \newline
+  Visualization of Wikipedia articles and their links. Built with d3 and Express.js, with a bi-directional breadth first search algorithm in C++.
+
+  \vspace{0.25cm}
+
+  \textbf{hackm.app} \hfill \href{https://hackmapp.dav.sh/}{\faLink \, \textit{hackmapp.dav.sh}} \quad \href{https://github.com/hackmapp/hackmapp}{\faGithub \, \textit{hackmapp/hackmapp}} \newline
+  Interactive map of the previous, current, and upcoming MLH hackathons. Built with d3, Express.js, and BeautifulSoup.
 
   \end{flushleft}
 \end{minipage}
